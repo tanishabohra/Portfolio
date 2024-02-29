@@ -1,106 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>First webpage</title>
-</head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanisha Bohra - Software Engineering Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 1em 0;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanisha Bohra</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <header>
-        <h1>Tanisha Bohra</h1>
-    </header>
-
+  <section id="about-me">
     <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
+      <div class="personal__logo">Tanisha Bohra</div>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="#languages" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Languages</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link">
+          <a href="mailto:email@email.com" class="
+            nav__link--anchor
+            nav__link--anchor-primary
+          ">Contact</a>
+        </li>
+      </ul>
     </nav>
+    <div class="flex flex-1">
+      <div class="about-me__info row">
+        <div class="about-me__info--container">
+          <figure class="about-me__picture--mask">
+            <img src="Tanisha Video Picture.jpg" class="about-me__picture" alt="Picture of Me!">
+          </figure>
+          <h1 class="about-me__info--title">
+            Hey! I'm <span class="text--purple">Tanisha Bohra</span>&nbsp;<span class="wave">👋</span>
+          </h1>
+          <p class="about-me__info--para">
+            I'm a <strong class="text--purple">student majoring in computer science</strong> with a strong passion for building
+            responsive and performant coding projects and
+            applications that have great user experiences and positively impacts the world.
+          </p>
+          <div class="about-me__links">
+            <a href="" class="about-me__link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="" class="about-me__link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="" class="about-me__link">
+              <i class="far fa-envelope"></i>
+            </a>
+            <a href="./assets/Example Resume.pdf" target="_blank" class="about-me__link">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+        <figure class="about-me__img--container">
+          <img src="./assets/undraw_websites.svg" class="about-me__img" alt="">
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section id="languages">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">This is my <span class="text--purple">technology stack</span></h1>
+        <div class="language__list">
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt="Html Logo" class="language__img" />
+            </figure>
+            <span class="language__name">HTML</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">CSS</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="Java Picture.png" alt="Java Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">Java</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                alt="TypeScript Logo" class="language__img" />
+            </figure>
+            <span class="language__name">TypeScript</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="Vue Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">Vue</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="Nuxt Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">Nuxt</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">React</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="https://mobx.js.org/img/mobx.png" alt="MobX Logo" class="language__img" />
+            </figure>
+            <span class="language__name">MobX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">Here are some of my <span class="text--purple">projects</span></h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="School Bus.jpg" class="project__img" alt="School Bus Transportation App">
+              <div class="project__description">
+                <h3 class="project__description--title">School Bus Transportation App</h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, Vue, Vuex
+                </h4>
+                <p class="project__description--para">
+                    App that will make the school bus transportation system efficient and safe.
+                    Using Node.js, Java, Swift,and Kotlin to develop an app compatible with Android and iOS systems.
+                    I am in the process of filing for a utility patent and searching for business strategies
+                    to monetize and launch this app.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.yourwebsite.com" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="gameoflife.gif" class="project__img" alt="Car subscription project">
+              <div class="project__description">
+                <h3 class="project__description--title">Game Of Life</h3>
+                <h4 class="project__description--sub-title">
+                  Java
+                </h4>
+                <p class="project__description--para">
+                    Practiced the understanding of 2D arrays and union-find in the context of cellular automation.
+                    Implemented methods in the GameOfLife class, focusing on rules for cell evolution.
+                    Utilized the WeightedQuickUnionUF class for computing the number of communities of cells.
+                    Successfully implemented Conway Game of Life with specified functionalities.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.yourwebsite.com" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="NY data.png" class="project__img" alt="Car subscription project">
+              <div class="project__description">
+                <h3 class="project__description--title">Stop and Frisk</h3>
+                <h4 class="project__description--sub-title">
+                  Java
+                </h4>
+                <p class="project__description--para">
+                    Developed a Java class, `StopAndFrisk`, to represent and analyze stop-and-frisk data provided by the New York Police Department (NYPD).
+                    Implemented a data-loading method (`readFile`) to read stop-and-frisk records from a CSV file, organizing them by year and populating the data structure (`database`).
+                    Created methods for data analysis, including `populationStopped` to retrieve records for a specific year and race, and `friskedVSArrested` to compute the percentage of frisked and arrested individuals for a given year.
+                    Contributed to crime analysis by implementing the `crimeIncrease` method, calculating the percentage change in a specific crime occurrence between two years.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.yourwebsite.com" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="row footer__row">
+      <a href="#" class="footer__anchor">
+        <figure class="footer__logo">
+          <img src="./assets/logo.svg" class="footer__logo--img" alt="">
+        </figure>
+        <span class="footer__logo--popper">
+          Top
+          <i class="fas fa-arrow-up"></i>
+        </span>
+      </a>
+      <div class="footer__social--list">
+        <a href="https://google.com" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        " target="_blank">GitHub</a>
+        <a href="https://google.com" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        " target="_blank">LinkedIn</a>
+        <a href="mailto:email@email.com" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        " target="_blank">Email</a>
+        <a href="./assets/Example Resume.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        " target="_blank">Resume</a>
+      </div>
+      <div class="footer__copyright">Copyright © 2021 David Bragg</div>
+    </div>
+  </footer>
+</body>
 
-    <main>
-
-        <section id="home">
-            <h2>Welcome to My Portfolio</h2>
-            <img src="https://wallpaperaccess.com/full/3632441.jpg" alt="Tanisha Bohra">
-            <p>Hello, I'm Tanisha Bohra, a software engineering student. This is my portfolio showcasing my projects, skills, and more.</p>
-            <p>Glad to introduce you to my digital portfolio! As an intanting software engineer, I have started on a path to showcase myself digitally in my full capabilities, projects and passions. The main idea behind my cover letter is to give an all-encompassing portrait of my proficiency, experiences, and interests while also making my contact information easily accessible.
-
-The website lends a hand to the prospective employers, clients and collaborators explore my abilities and previous experiences, thereby creating professional chances and networking relationship. With hiring managers, recruiters, experienced software engineers, and tech enthusiasts being the target audience, it is purposed to be compelling enough to keep the attention of the audience and position me as a software engineer with a specialization amidst the ever-changing technological landscape.
-
-The project, which I took as a personal challenge, embodies not only the outcome of my efforts, but also my personal and professional self. By means of careful selection and presentation of my assignments and hobbies, I intend to build trustworthiness and forge useful bonds and get my career on the roll in the highly competitive field of software engineering.
-
-I have got to this point in the process of creating a website where I have a choice to use platforms likeWixand its easy-to use interface and flexible templates, or make the website from scratch to make it more of me. This decision shows my dedication to developing a captivating online presence with the right content and feel that corresponds to my target audience and my view about software engineering.
-
-During the website design process, I employ a hierarchical approach that requires the application of analysis, synthesis and evaluation based reasoning skills as I present my projects, skills and experiences in depth and precise. Through critical thinking and active participation, I seek to design a digital experience that is interesting and impactful and that will remain in the minds of the visitors even after they’ve utilized its contents.</p>
-
-
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <!-- Include project details and links here -->
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <!-- Include a list of skills here -->
-        </section>
-
-        <section id="resume">
-            <h2>Resume</h2>
-            <!-- Include a link or details to your resume here -->
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <!-- Include contact information or a contact form here -->
-        </section>
-
-    </main>
 </html>
